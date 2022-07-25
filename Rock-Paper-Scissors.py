@@ -1,5 +1,3 @@
-from asyncio.constants import DEBUG_STACK_DEPTH
-from os import chdir
 from random import random
 from secrets import choice
 from tkinter import messagebox
@@ -53,7 +51,7 @@ def Scissors_choices():
     if random == "Scissors":
         rock = messagebox.showwarning("Tie", "Scissors! Its a tie")
 
-img = PhotoImage(file="Rock Paper Scissors\\Wooden Background.png")
+img = PhotoImage(file="Rock Paper Scissors\Wooden Background.png")
 label = Label(r ,image=img).place(x=-20,y=-20)
 
 #Buttons
