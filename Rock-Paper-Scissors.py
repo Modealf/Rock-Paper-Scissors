@@ -11,12 +11,12 @@ r.title('Rock Paper Scissors')
 r.geometry('350x270')
 
 
+mylist = ["Rock", "Paper", "Scissors"]
 
 # Random Outcomes
 
 
 def Rock_choices():
-    mylist = ["Rock", "Paper", "Scissors"]
     random = choice(mylist)
     if random == "Rock":
         rock = messagebox.showwarning("Tie", "Rock! Its a tie.")
@@ -28,8 +28,7 @@ def Rock_choices():
         rock = messagebox.showinfo("Win", "Scissors! You win")
 
 def Paper_choices():
-    mylist = ["Rock", "Paper", "Scissors"]
-    random= choice(mylist)
+    random = choice(mylist)
     if random == "Rock":
         rock = messagebox.showinfo("Win", "Rock! You win")
 
@@ -40,8 +39,7 @@ def Paper_choices():
         rock = messagebox.showerror("Lose", "Scissors! You lose")
 
 def Scissors_choices():
-    mylist = ["Rock", "Paper", "Scissors"]
-    random= choice(mylist)
+    random = choice(mylist)
     if random == "Rock":
         rock = messagebox.showerror("Lose", "Rock! You lost")
 
@@ -51,7 +49,7 @@ def Scissors_choices():
     if random == "Scissors":
         rock = messagebox.showwarning("Tie", "Scissors! Its a tie")
 
-img = PhotoImage(file="Rock Paper Scissors\Wooden Background.png")
+img = PhotoImage(file="Wooden Background.png")
 label = Label(r ,image=img).place(x=-20,y=-20)
 
 #Buttons
